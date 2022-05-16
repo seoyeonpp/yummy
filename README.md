@@ -1,24 +1,5 @@
-# yummy
+## 회사 점심 맛집 랜덤뽑기
+___
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. 메인화면
+ * 원하는 위치를 선택합니다.
