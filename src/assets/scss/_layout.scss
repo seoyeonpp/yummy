@@ -1,0 +1,91 @@
+// intro splash
+#splash {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #2e2e2e;
+    z-index: 999;
+    transition: opacity 0.8s;
+    font-family: 'Kirang Haerang', cursive;
+    #carousel-wrapper,
+    #carousel figure {
+        height: 10rem;
+        line-height: 10rem;
+        color: white;
+    }
+
+    #carousel figure:nth-of-type(1) {transform: rotateX(0deg)   translateZ(8.6rem);}
+    #carousel figure:nth-of-type(2) {transform: rotateX(60deg)  translateZ(8.6rem);}
+    #carousel figure:nth-of-type(3) {transform: rotateX(120deg) translateZ(8.6rem);}
+    #carousel figure:nth-of-type(4) {transform: rotateX(180deg) translateZ(8.6rem);}
+    #carousel figure:nth-of-type(5) {transform: rotateX(240deg) translateZ(8.6rem);}
+    #carousel figure:nth-of-type(6) {transform: rotateX(300deg) translateZ(8.6rem);}
+
+    #carousel[data-state="1"] figure:nth-of-type(1),
+    #carousel[data-state="2"] figure:nth-of-type(2),
+    #carousel[data-state="3"] figure:nth-of-type(3),
+    #carousel[data-state="4"] figure:nth-of-type(4),
+    #carousel[data-state="5"] figure:nth-of-type(5),
+    #carousel[data-state="6"] figure:nth-of-type(6) { opacity: 1; }
+
+    #carousel-wrapper {
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        width: 50%;
+        text-align: center;
+        perspective: 110rem;
+    }
+
+    #carousel {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 100;
+        transform-style: preserve-3d;
+        transition: all 1s;
+    }
+
+    #carousel figure {
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        font-size: 8rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        opacity: .2;
+        transition: all 1s;
+        backface-visibility: hidden;
+    }
+}
+
+// layout
+html {
+    // font-family: 'Kirang Haerang', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 128rem;
+    margin: 0 auto;
+}

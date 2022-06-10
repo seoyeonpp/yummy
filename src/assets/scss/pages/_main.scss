@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.main {
+        width: 100%;
+        height: 100%;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        h1{
+            font-size: 7rem;
+            // font-family: 'Gugi', cursive;
+            font-family: 'SDSamliphopangche_Outline';
+        }
+        p {
+            font-size: 3rem;
+        }
+        a{
+            font-size: 3rem;
+        }
+    }
+}
