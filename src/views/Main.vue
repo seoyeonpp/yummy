@@ -14,12 +14,24 @@
         </div>
       </div>
       <div class="container">
-        <h1>!!!!회사 점심 맛집 랜덤뽑기!!!!</h1>
-        <p>지역을 선택해주세요</p>
-        <router-link to="/gangnam">강남</router-link>
-        <router-link to="/sangam">상암</router-link>
-        <!-- <router-link to="/yeouido">여의도</router-link> -->
-        <font-awesome-icon icon="fa-thin fa-alien" />
+        <div class="bg-wrap">
+          <video autoplay loop muted playsinline preload="auto">
+            <source src="@/assets/images/video/main.mp4">
+          </video>
+        </div>
+        <div class="contents-wrap">
+          <h1>회사 점심 맛집 랜덤뽑기🍔</h1>
+          <p>원하는곳 클릭해주세요!!</p>
+          <div class="area-wrap">
+            <router-link to="/gangnam">강남</router-link>
+            <router-link to="/sangam">상암</router-link>
+          <!-- <router-link to="/yeouido">여의도</router-link> -->
+          </div>
+          <!-- <font-awesome-icon icon="fa-thin fa-alien" /> -->
+          <footer>
+            &copy; 2022, 박서연
+          </footer>
+        </div>
       </div>
     </div>
   </div>

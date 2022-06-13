@@ -51,7 +51,7 @@
         position: absolute;
         width: 100%;
         margin: 0;
-        font-size: 8rem;
+        font-size: 5rem;
         font-weight: bold;
         color: #fff;
         text-align: center;
@@ -63,7 +63,7 @@
 
 // layout
 html {
-    // font-family: 'Kirang Haerang', cursive;
+    content-visibility: auto;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
     width: 100%;
@@ -85,7 +85,9 @@ body {
 }
 
 .container {
+    position: relative;
     width: 100%;
-    max-width: 128rem;
+    max-width: 108rem;
     margin: 0 auto;
+    padding: 0 1rem;
 }

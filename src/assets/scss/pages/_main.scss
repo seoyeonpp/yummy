@@ -1,25 +1,70 @@
 @charset "UTF-8";
 
 .main {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    .bg-wrap{
+        position: absolute;
+        z-index: -1;
         width: 100%;
         height: 100%;
+        video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
     .container{
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
+        justify-content: center;
         width: 100%;
         height: 100%;
+
+        .contents-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 5rem 1rem 1rem;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 1rem;
+        }
         h1{
-            font-size: 7rem;
-            // font-family: 'Gugi', cursive;
+            margin-bottom: 2em;
+            font-size: 2.8rem;
             font-family: 'SDSamliphopangche_Outline';
+            font-weight: bold;
         }
         p {
-            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1em;
+            font-size: 2rem;
         }
-        a{
-            font-size: 3rem;
+        .area-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            a{
+                font-size: 1.8rem;
+                font-weight: bold;
+                padding: 0.5em 0.8em;
+                color: #fff;
+                background-color: #333;
+                border-radius: 1em;
+            }
+        }
+        footer {
+            margin-top: 8rem;
+            font-size: 1.5rem;
+            font-family: 'SDSamliphopangche_Outline';
         }
     }
 }
