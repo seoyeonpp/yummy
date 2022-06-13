@@ -1,7 +1,7 @@
 // vue.config.js
 
 module.exports = {
-    publicPath: 'yummy',
+    publicPath: '/yummy',
     css: {
         loaderOptions: {
             sass: {
